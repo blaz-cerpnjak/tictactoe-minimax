@@ -1,5 +1,7 @@
 # TicTacToe With Minimax AI Algorithm 
 
+### If this project has helped you in any way, you can give me a star.
+
 <p align="left">
   <img src="main_menu.png" width="700" />&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="choose_player.png" width="700" />&nbsp;&nbsp;&nbsp;&nbsp;
