@@ -1,0 +1,65 @@
+﻿<Window x:Class="TicTacToeMinimax.ChoosePlayer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TicTacToeMinimax"
+        mc:Ignorable="d"
+        Title="Choose Your Player" Height="450" Width="800">
+    <Window.Resources >
+        <Style TargetType="Button">
+            <Setter Property="OverridesDefaultStyle" Value="True" />
+            <Setter Property="Background" Value="#27ae61" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid Background="{TemplateBinding Background}">
+                            <ContentPresenter x:Name="MyContentPresenter" 
+                                          Content="{TemplateBinding Content}"
+                                          HorizontalAlignment="Center" 
+                                          VerticalAlignment="Center" />
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#475c71"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <Grid Background="#2d3e50">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="0.5*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Singleplayer" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2" Foreground="White"
+                   VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Microsoft JhengHei UI Light"/>
+       
+        <TextBlock Text="Choose your player" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" FontSize="30"
+                   VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" FontFamily="Segoe UI Black"/>
+
+        <Button x:Name="BtnX" Margin="5" Grid.Column="1" Grid.Row="3" Grid.RowSpan="3" 
+                FontFamily="Segoe UI Black" Content="X" FontSize="75" Click="BtnX_Click"/>
+
+        <Button x:Name="BtnO" Margin="5" Grid.Column="2" Grid.Row="3" Grid.RowSpan="3" 
+                FontFamily="Segoe UI Black" Content="O" FontSize="75" Click="BtnO_Click"/>
+
+    </Grid>
+</Window>
