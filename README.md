@@ -1,10 +1,10 @@
 # TicTacToe With Minimax AI Algorithm 
 
 <p align="left">
-  <img src="main_menu.png" height="250" />&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="choose_player.png" height="250" />&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="difficulty.png" height="250" />&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="gameplay.png" height="250" />
+  <img src="main_menu.png" width="700" />&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="choose_player.png" width="700" />&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="difficulty.png" width="700" />&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="gameplay.png" width="700" />
 </p>
 
 # Technologies 
